@@ -136,7 +136,7 @@ function computeWinner() {
             winner = DEALER;
 
         } else if (YOU['score'] === DEALER['score']) {
-            blackjackGame['draws'];
+            blackjackGame['draws']++;
         }
         // condition: when user busts but dealer doesn't
     } else if (YOU['score'] > 21 && DEALER['score'] <= 21) {
@@ -145,7 +145,7 @@ function computeWinner() {
 
         // condition: when you AND the dealer busts
     } else if (YOU['score'] > 21 && DEALER['score'] > 21) {
-        blackjackGame['draws'];
+        blackjackGame['draws']++;
     }
 
     console.log(blackjackGame);
